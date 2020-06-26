@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+   <div class="about">
+     <h1 style="text-align:center">What social problem does this project address?</h1>
+
+     <p>2020 has been the year of the unprecedented, both due to the spread of COVID-19 and the popularization
+         of the Black Lives Matter movement. PPP, or Python Protects Protesters, combines these "super issues" and helps
+     protestors support the cause while staying safe. Using PPP, protesters can see all the previous BLM protests in
+     their area and also get a risk evaluation for how dangerous it is to protest in their county.</p>
+
+       <h1 style="text-align:center">How is AI integrated into PPP?</h1>
+
+     <p>PPP implements a supervised Machine Learning algorithm known as Linear Regression when it determines the arbitrary
+         risk percentage. By implementing this algorithm we determined how much each of the chosen factors (heart disease death rate,
+         poverty rate, unemployment rate, median household income, percentage of 65+ population, percentage of minorities, population density)
+         influenced the percent of the county population infected (as of 06/21/20). Then using these weights, we accordingly developed a mathematically formula to calculate our Risk scale (1-100).</p>
+
+       <h1 style="text-align:center"> SPECIAL THANKS TO </h1><br>
+       <h3 style="text-align:center">Alex Smith/Creosote Maps</h3>
+       <h3 style="text-align:center">YKZeng (Github)</h3>
+       <h3 style="text-align:center">United States Department of Agriculture (USDA)</h3>
+       <h3 style="text-align:center">Centers for Disease Control and Prevention (CDC)</h3>
+       <h3 style="text-align:center">Medium</h3>
+       <h3 style="text-align:center">All the mentors for your unconditional support!</h3>
+   </div>
+{% endblock %}

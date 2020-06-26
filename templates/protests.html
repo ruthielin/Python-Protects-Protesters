@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+   <div class="protests">
+     <h1>Nearby Cities with Past BLM Protests:</h1>
+
+     <p style="font-size:5vw">{{ var }} </p>
+
+       <form action="/risk">
+           <input type="submit" value="Click to find your risk!">
+       </form>
+
+   </div>
+{% endblock %}

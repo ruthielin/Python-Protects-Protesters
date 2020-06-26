@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<style>
+.center {
+    text-align: center;
+}
+</style>
+
+   <div class="results">
+     <h1>RESULTS</h1>
+
+       <p>This will be where your risk index shows. </p>
+    <h2 style="text-align:center">YOUR RISK INDEX (1-100%) :</h2>
+<h2 style="color:tomato; text-align:center"> {{ var2 }}%</h2>
+
+       <h3>Accuracy of Linear Regression Model: </h3>
+       <h4>Mean Absolute Error: 3.643261359801106 </h4>
+       <h4>Mean Squared Error: 44.71817047600735</h4>
+       <h4>Root Mean Squared Error: 6.687164606618215</h4>
+
+
+       <form action="/tips" style="text-align:center">
+           <input type="submit" value="Check out these tips to protest during COVID!">
+       </form>
+   </div>
+{% endblock %}

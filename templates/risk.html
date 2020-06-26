@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+   <div class="risk">
+     <h1>YOUR RISK</h1>
+     <p>FIPS stands for Federal Information Processing Standards.
+     Each county in the United States contains a unique FIPS code.</p>
+       <p>Visit this <a href="https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/home/?cid=nrcs143_013697" target="_blank">page</a> to find your FIPS</p>
+
+       <form style="text-align:left" method="POST">
+           <h3>Where do you live?</h3>
+           <b><label for="county">FIPS:</label></b><br>
+           <input type="text" id="county" name="location"><br>
+
+           <input type="submit" value="Submit"><br>
+
+           <img src="https://media.timeout.com/images/105654872/image.jpg"
+                alt="BLM2" width="720">
+       </form>
+
+   </div>
+{% endblock %}
